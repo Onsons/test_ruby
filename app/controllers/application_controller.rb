@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
 	  getResultValue = GetResultValue.new(new_history.fromTo,new_history.amount)
 	  new_history.result = getResultValue.getResult #calculating the result
 	  new_history.save 
-	  erb(:index, locals: { result:new_history.result ,amount:new_history.amount,from_To:new_history.fromTo}) 
+	  erb(:index, locals: { result:new_history.result ,amount:new_history.amount,from_To:new_history.from_To}) 
 	end
 
 end
