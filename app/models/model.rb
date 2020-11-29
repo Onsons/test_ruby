@@ -9,7 +9,7 @@ class History
 	property :result,     	  	Float    
 end
 class GetResultValue
-	def initialize(fromTo,amount)
+	def initialize(from_To,amount)
 		@conversion = from_To
 		@amount =amount 
 	end
