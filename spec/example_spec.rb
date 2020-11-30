@@ -12,7 +12,7 @@ describe 'Your application' do
   end
   it "delete all data in the history!" do
     get '/delete-history'
-    expect(last_response.status).to eq 302
+    expect(last_response.status).to eq 200
   end
 
   # todo: Add more tests here
